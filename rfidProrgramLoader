@@ -1,0 +1,37 @@
+var request = require('request');
+
+var RfidProgramLoader = function(attributes) {
+    this.programName = attributes.programName;
+}
+
+RfidProgramLoader.prototype.reloadProgram = function() {
+    console.log("Reload " + this.programName );
+}
+
+RfidProgramLoader.prototype.run =  function(){
+    console.log("Issuing macstart");
+    var options = {
+        method: "put",
+        url: 'http://127.0.0.1:3000/rfid/runProgram',
+        headers: {
+            "Content-Type": "text/plain"
+        },
+        body: "macstart"
+    }
+
+    request(options, function(err, resp, body) {
+        if (err) {
+            logger.error("Trouble issuing macstart, err: " + err);
+        }
+        else {
+            logger.info("Issued macinventory to ficl");
+        }
+        cb(err);
+    });
+}
+
+
+
+
+
+module.exports = RfidProgramLoader;

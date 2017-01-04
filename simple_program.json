@@ -1,0 +1,170 @@
+{
+  "header": {
+    "version": 1,
+    "programID": 1,
+    "action": "MINIMUM",
+    "repeat": 1,
+    "channels": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "inventories": [
+    {
+      "inventoryID": 1,
+      "roundType": "ROUNDTYPE_FIXED_COUNT",
+      "count": 1,
+      "power_dBm": 27,
+      "selectChainFirstLabel": "basicSelect",
+      "selectChainRepeatLabel": "basicSelect",
+      "phyLayerLabel": "basicPhy",
+      "transmitSource": "STR_400",
+      "rxAntennaConfig": [
+        {
+          "antennaPort1": "PORT_1",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_2",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_1",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_3",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_1",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_4",
+          "expanderPort2": "NONE"
+        }
+      ],
+      "txAntennaPort": "PORT_1",
+      "txExpanderPort": "NONE"
+    },
+    {
+      "inventoryID": 2,
+      "roundType": "ROUNDTYPE_FIXED_COUNT",
+      "count": 1,
+      "power_dBm": 25,
+      "selectChainFirstLabel": "basicSelect",
+      "selectChainRepeatLabel": "basicSelect",
+      "phyLayerLabel": "basicPhy",
+      "transmitSource": "STR_400",
+      "rxAntennaConfig": [
+        {
+          "antennaPort1": "PORT_2",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_1",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_2",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_3",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_2",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_4",
+          "expanderPort2": "NONE"
+        }
+      ],
+      "txAntennaPort": "PORT_2",
+      "txExpanderPort": "NONE"
+    },
+    {
+      "inventoryID": 3,
+      "roundType": "ROUNDTYPE_FIXED_COUNT",
+      "count": 1,
+      "power_dBm": 26.5,
+      "selectChainFirstLabel": "basicSelect",
+      "selectChainRepeatLabel": "basicSelect",
+      "phyLayerLabel": "basicPhy",
+      "transmitSource": "STR_400",
+      "rxAntennaConfig": [
+        {
+          "antennaPort1": "PORT_3",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_1",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_3",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_2",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_3",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_4",
+          "expanderPort2": "NONE"
+        }
+      ],
+      "txAntennaPort": "PORT_3",
+      "txExpanderPort": "NONE"
+    },
+    {
+      "inventoryID": 4,
+      "roundType": "ROUNDTYPE_FIXED_COUNT",
+      "count": 1,
+      "power_dBm": 27.5,
+      "selectChainFirstLabel": "basicSelect",
+      "selectChainRepeatLabel": "basicSelect",
+      "phyLayerLabel": "basicPhy",
+      "transmitSource": "STR_400",
+      "rxAntennaConfig": [
+        {
+          "antennaPort1": "PORT_4",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_1",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_4",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_2",
+          "expanderPort2": "NONE"
+        },
+        {
+          "antennaPort1": "PORT_4",
+          "expanderPort1": "NONE",
+          "antennaPort2": "PORT_3",
+          "expanderPort2": "NONE"
+        }
+      ],
+      "txAntennaPort": "PORT_4",
+      "txExpanderPort": "NONE"
+    }
+  ],
+  "selectChains": [
+    {
+      "label": "basicSelect",
+      "selectChain": [
+        {
+          "target": "SEL_TARGET_S1",
+          "action": "SEL_ACTION_M_NM_SET",
+          "maskLength": 0,
+          "maskStart": 32,
+          "mask": ""
+        }
+      ]
+    }
+  ],
+  "physicalLayers": [
+    {
+      "label": "basicPhy",
+      "target": "TARGET_A",
+      "q": 5,
+      "session": "SESSION_S1",
+      "lf": "LF_256KHZ",
+      "tari": "TARI_12_5USEC",
+      "sl": "INV_SL_ALL",
+      "m": "MODULATION_M4"
+    }
+  ]
+}

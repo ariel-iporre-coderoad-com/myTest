@@ -1,0 +1,38 @@
+{
+  "header": {
+    "version": 1,
+    "programID": 1,
+    "action": "MINIMUM",
+    "repeat": 1,
+    "allowOpenPortTx": true
+  },
+  "inventories": [
+
+  ],
+  "selectChains": [
+    {
+      "label": "basicSelect",
+      "selectChain": [
+        {
+          "target": "SEL_TARGET_S1",
+          "action": "SEL_ACTION_M_NM_SET",
+          "maskLength": 0,
+          "maskStart": 32,
+          "mask": ""
+        }
+      ]
+    }
+  ],
+  "physicalLayers": [
+    {
+      "label": "basicPhy",
+      "target": "TARGET_A",
+      "q": 5,
+      "session": "SESSION_S1",
+      "lf": "LF_256KHZ",
+      "tari": "TARI_12_5USEC",
+      "sl": "INV_SL_ALL",
+      "m": "MODULATION_M4"
+    }
+  ]
+}

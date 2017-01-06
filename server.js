@@ -1,9 +1,6 @@
 var express = require('express');
 var app = express();
 var fs = require("fs");
-var RfidProgramLoader = require('./rfidProrgramLoader');
-var loader =  new RfidProgramLoader({ programName : "hola"});
-loader.reloadProgram();
 
 
 app.get('/listUsers', function (req, res) {

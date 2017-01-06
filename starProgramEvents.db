@@ -1,0 +1,12 @@
+{"configItem":"event","programName":"abc123","running":true,"time":{"$$date":1483728732630},"type":"rfid","_id":"ARvbbDRBcR26QVcT"}
+{"firmwareFileType":"patch","fileName":"factoryOrigImage.patch","_id":"UMmcXCZA1G4JOvBu"}
+{"configItem":"ntp","val":"pool.ntp.org","_id":"WXFs4zfJf7bvkK89"}
+{"configItem":"network","val":{"dhcp":true,"overlayIP":"169.254.146.74","hostname":"mojixc5924a"},"_id":"WkKSntVdUVbpwpDJ"}
+{"firmwareFileType":"fpga","fileName":"/var/uploads/ust_0x71.bin","_id":"bhzl2YE9VI4ke03L"}
+{"configItem":"antennaAliases","val":{},"_id":"cuFD1ijmLqvBXT9n"}
+{"configItem":"private","val":{"deviceName":""},"_id":"dlNbu0gtHgZcG1vi"}
+{"configItem":"closet","val":{"registered":true,"starFlexUI":{"globalParams":{"rfidFirstTime":true}}},"_id":"i7GTx3lU6a0JfRVB"}
+{"firmwareFileType":"dsp","fileName":"/var/uploads/vortex_ustar_47787.hex","_id":"n0trTGx7st6TqsYR"}
+{"firmwareFileType":"rfid","fileName":"basic.rfid","_id":"uxOsseulngL2bkBy"}
+{"$$indexCreated":{"fieldName":"firmwareFileType","unique":false,"sparse":false}}
+{"$$indexCreated":{"fieldName":"configItem","unique":false,"sparse":false}}

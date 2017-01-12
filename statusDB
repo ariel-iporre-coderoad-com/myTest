@@ -1,0 +1,5 @@
+{"configItem":"event","type":"configuration","updatesLock":false,"recoveryLock":true,"_id":"665fzwtPwdWsXwsF"}
+{"configItem":"event","programName":"abc1234","running":false,"time":{"$$date":1484231378922},"type":"rfid","_id":"QSVuCTPsoGr7z0RG"}
+{"configItem":"event","type":"configuration","updatesLock":false,"recoveryLock":true,"_id":"665fzwtPwdWsXwsF"}
+{"configItem":"event","programName":"abc1234","running":false,"time":{"$$date":1484231543266},"type":"rfid","_id":"QSVuCTPsoGr7z0RG"}
+{"configItem":"event","type":"configuration","updatesLock":false,"recoveryLock":true,"_id":"665fzwtPwdWsXwsF"}

@@ -1,41 +1,26 @@
-var ProgramLoader = require('./programLoader');
-var loader = new ProgramLoader();
-//
-console.log("ACTIVATION 1: ");
-// loader.lockUpdate(false)
-loader.update("kill", "abc1234", "rfid", function(status){
-    console.log("callback in app: " + status)
-});
-sleep(5000);
+var ProgramLoader = require('./statusRestorer');
+var retorer = new ProgramLoader();
+var logger = require('winston');
+var async = require('async');
+var programLauncher = require('./programLauncher')
 
-// loader.lockRecover(false)
-// console.log("ACTIVATION 2: ");
-// loader.restore('rfid',function(status){
+// retorer.lockRecover(false)
+// retorer.lockUpdate(false)
+// retorer.update(true, "abc1234", "rfid", {}, function(status){
 //     console.log("callback in app: " + status)
+//     retorer.lockUpdate(false)
 // });
-// sleep(5000)
-//
-// loader.reportStatus(function(value) {
-//         console.log("report staus:  " + value)
-//     })
-//
-// console.log("DEACTIVATION 1: ");
-// loader.update("kill", "basic", "rfid");
-// sleep(5000)
-//
-// console.log("DEACTIVATION 2: ");
-// loader.runRFID('rfid');
-// sleep(5000);
 
-function sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds) {
-            break;
-        }
+
+retorer.injectRecoverMethod("rfid", programLauncher.launchProgram, function (fun) {
+    if(fun === programLauncher.launchProgram){
+        logger.info("alles gut");
+    }else {
+        logger.info("nicht gleich")
     }
-}
+} );
 
-
-
+retorer.restore("rfid",function (response) {
+    logger.info("===========>> inside the callback of app. js  :" + response)
+})
 

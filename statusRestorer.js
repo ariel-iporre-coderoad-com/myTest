@@ -31,39 +31,71 @@ StatusRestorer = function () {
 StatusRestorer.prototype.reportStatus = function (cb) {
     var me = this;
     async.series([
+        //compact database
         function (callback) {
-            var last = null;
+            logger.info("------------------------- compating.....")
+            me.db.persistence.compactDatafile();
+            //Waiting compact acction.
+            setTimeout(function (){
+                logger.info("------------------------- done")
+                callback();
+            }, 500);
+        },
+        function (callback) {
+            var lastProgram = null;
             me.db.find({type: "rfid"}).sort({time: -1}).limit(1).exec(function (err, docs) {
                 docs.forEach(function (d) {
-                    last = d;
-                    logger.info("Auto-recovery: Last program registered " + JSON.stringify(last))
+                    lastProgram = d;
+                    logger.info("Auto-recovery: Last program registered " + JSON.stringify(lastProgram))
                 });
-                callback(null, last)
+                callback(null, lastProgram)
             });
         },
         function (callback) {
-            var config = null;
-            me.db.find({type: "configuration"}, function (err, docs) {
+            var lastConfig = null;
+            me.db.find({type: "configuration"}).sort({time: -1}).limit(1).exec( function (err, docs) {
                 docs.forEach(function (d) {
-                    config = d;
-                    logger.info("Auto-recovery: Last recovery configuration registered: " + JSON.stringify(config))
+                    lastConfig = d;
+                    logger.info("Auto-recovery: Last recovery configuration registered: " + JSON.stringify(lastConfig))
                 })
-                callback(null, config);
+                callback(null, lastConfig);
+            });
+        },
+        function (callback) {
+            var lastMqtt = null;
+            me.db.find({type: "mqtt"}).sort({time: -1}).limit(1).exec( function (err, docs) {
+                docs.forEach(function (d) {
+                    lastMqtt = d;
+                    logger.info("Auto-recovery: Last mqtt status registered: " + JSON.stringify(lastMqtt))
+                });
+                callback(null, lastMqtt);
             });
         }
     ], function (err, result) {
         if (err) {
             cb(err);
         } else {
-            var last = result[0];
+            var program = result[0];
             var config = result[1];
-            var response = {
-                programName: last? last.targetName : ""
-                , running: last? last.active : null
-                // , type: last? "rfid" : null
-                , updatesAllowed: me.updatesAllowed
-                , autoRecovery: me.recoveryEnabled
-            };
+            var mqtt = result[2];
+            var response = {};
+            //Default state if no in memory
+            response["programName"] = "";
+            response["programRunning"] = false;
+            response["mqttSendingData"] = false;
+            // Updating the values
+            program? response["programName"] = program.targetName : null;
+            program? response["programRunning"] = program.active : null;
+            mqtt? response["mqttSendingData"] = mqtt.active : null;
+            var mqttSub = ""
+            logger.info(mqtt)
+            if(mqtt){
+                mqtt.targetName.split("/")[2]? mqttSub = mqtt.targetName.split("/")[2]: null;
+                mqtt && mqtt.active? response["mqttSubscriptionName"] = mqttSub : null;
+            }
+            response["recoveryMode"] = me.updatesAllowed? "lastState" : "fixedState";
+            response["autoRecovery"] = me.recoveryEnabled;
+
             logger.info("Auto-recovery: Current recovery restorer status: " + JSON.stringify(response));
             cb(response);
         }
@@ -105,11 +137,23 @@ StatusRestorer.prototype.restore = function (type, cb) {
             function (callback) {
                 var readVal = null;
                 if (me.recoveryEnabled) {
+                    var msg = "";
                     me.db.find({type: type}).sort({time: -1}).limit(1).exec(function (err, docs) {
                         readVal = docs;
-                        me.launchMethods[type](readVal, type);
+                        var launcher = me.launchMethods[type];
+                        if(launcher){
+                            try{
+                                launcher(readVal, type);
+                            }catch(err){
+                                logger.info("ERROR: " + err.stack)
+                            }
+                            msg = "Program launched " + JSON.stringify(readVal);
+                            callback(null, msg)
+                        }else{
+                            msg = "Launch method not found"
+                            callback(null, msg)
+                        }
                     });
-                    callback(null, "Program Launched")
                 } else {
                     callback(null, "Recovery is disabled")
                 }
@@ -128,14 +172,14 @@ StatusRestorer.prototype.persistConfiguration = function (doc, replaceKey, callb
     // db = new Datastore({filename: this.fileDB, autoload: true});
     // logger.info("Saving new recovery (" + JSON.stringify(replaceKey) + ") configuration: " + JSON.stringify(doc));
     db = this.db;
-    db.update(replaceKey, doc, {upsert: true, multi: true}, function (err, numReplaced) {
-        // logger.info('Inserting configuration ( numReplaced ' + numReplaced + ')...');
-        // db.find(replaceKey, function (err, docs) {
-        //     readVal = docs;
-        //     readVal.forEach(function (d) {
-        //         logger.info('Saved recovery '+ replaceKey +':' + d);
-        //     });
-        // });
+    db.update(replaceKey, doc, {upsert: true, multi: false}, function (err, numReplaced) {
+        logger.info('Inserting configuration ( numReplaced ' + numReplaced + ')...');
+        db.find(replaceKey, function (err, docs) {
+            readVal = docs;
+            readVal.forEach(function (d) {
+                logger.info('Saved recovery '+ replaceKey +':' + d);
+            });
+        });
         if (err) {
             callback(err);
         } else {
@@ -208,7 +252,7 @@ StatusRestorer.prototype.lockUpdate = function (lockAction) {
         if (a) {
             // logger.info("Configuration successfully inserted" + JSON.stringify(a));
         } else {
-            logger.info(" Auto-recovery: Failed to put updateDisable flag in:  " + lockAction);
+            logger.info("   Auto-recovery: Failed to put updateDisable flag in:  " + lockAction);
         }
     });
 };
@@ -226,8 +270,7 @@ StatusRestorer.prototype.update = function (active, targetName, type, recoveryDa
 
     console.log("Updating status of program : " + targetName + " to active = " + active);
     var doc = {
-        configItem: "event"
-        , targetName: targetName
+        targetName: targetName
         , active: active
         , time: new Date()
         , type: type
@@ -247,8 +290,8 @@ StatusRestorer.prototype.update = function (active, targetName, type, recoveryDa
                 })
             },
             function (callback) {
-                if (me.updatesAllowed) {
-                    me.persistConfiguration(doc, {targetName: targetName}, function (a) {
+                if (me.updatesAllowed || type === "mqtt") {
+                    me.persistConfiguration(doc, {type: type}, function (a) {
                         if (a) {
                             callback(null, "Last state has been updated successfully.");
                             logger.info("Auto-recovery: Program state (" + targetName + ") successfully inserted : " + JSON.stringify(a));
@@ -266,9 +309,9 @@ StatusRestorer.prototype.update = function (active, targetName, type, recoveryDa
         // optional callback
         function (err, results) {
             if (err) {
-                callback(err)
+                callback(err,null)
             } else {
-                callback(results)
+                callback(null,results)
             }
         });
 };

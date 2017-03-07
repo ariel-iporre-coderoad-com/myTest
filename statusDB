@@ -1,3 +1,2 @@
-{"configItem":"event","programName":"abc1234","running":true,"time":{"$$date":1484345730343},"type":"rfid","_id":"2GXfTxnUTRw8w4hD"}
-{"type":"configuration","updatesAllowed":true,"recoveryEnabled":true,"time":{"$$date":1484850651309},"_id":"E5lSid68egJpH8bf"}
-{"configItem":"event","targetName":"abc1234","active":true,"time":{"$$date":1484850651248},"type":"rfid","recoveryData":{},"_id":"oDcnogUNJ8CrYd53"}
+{"targetName":"/test/abc03","active":true,"time":{"$$date":1487856342307},"type":"mqtt","recoveryData":"recovery data","_id":"J3vTHrMLh7bG1CqX"}
+

@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'childProcess' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 warn package.json nedb@1.8.0 No README data
+5 warn package.json fs@0.0.1-security fs is also the name of a node core module.
+6 warn package.json express-ensure-ctype@0.1.0 No repository field.
+7 warn package.json child_process@1.0.2 child_process is also the name of a node core module.
+8 warn package.json path@0.12.7 path is also the name of a node core module.
+9 warn package.json util@0.10.3 util is also the name of a node core module.
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'childProcess', null ]
+12 verbose cache add name=undefined spec="childProcess" args=["childProcess",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'childProcess',
+13 verbose parsed url   path: 'childProcess',
+13 verbose parsed url   href: 'childProcess' }
+14 silly lockFile 7f139d92-childProcess childProcess
+15 verbose lock childProcess /home/ariel/.npm/7f139d92-childProcess.lock
+16 silly lockFile 7f139d92-childProcess childProcess
+17 silly lockFile 7f139d92-childProcess childProcess
+18 verbose addNamed [ 'childProcess', '' ]
+19 verbose addNamed [ null, '*' ]
+20 silly lockFile c3e78a3e-childProcess childProcess@
+21 verbose lock childProcess@ /home/ariel/.npm/c3e78a3e-childProcess.lock
+22 silly addNameRange { name: 'childProcess', range: '*', hasData: false }
+23 verbose request where is /childProcess
+24 verbose request registry https://registry.npmjs.org/
+25 verbose request id 30c7b4f7caaa46a4
+26 verbose url raw /childProcess
+27 verbose url resolving [ 'https://registry.npmjs.org/', './childProcess' ]
+28 verbose url resolved https://registry.npmjs.org/childProcess
+29 verbose request where is https://registry.npmjs.org/childProcess
+30 info trying registry request attempt 1 at 11:46:45
+31 http GET https://registry.npmjs.org/childProcess
+32 http 404 https://registry.npmjs.org/childProcess
+33 silly registry.get cb [ 404,
+33 silly registry.get   { 'content-type': 'application/json',
+33 silly registry.get     'cache-control': 'max-age=0',
+33 silly registry.get     'content-length': '2',
+33 silly registry.get     'accept-ranges': 'bytes',
+33 silly registry.get     date: 'Fri, 17 Mar 2017 15:51:14 GMT',
+33 silly registry.get     via: '1.1 varnish',
+33 silly registry.get     age: '0',
+33 silly registry.get     connection: 'keep-alive',
+33 silly registry.get     'x-served-by': 'cache-mia1327-MIA',
+33 silly registry.get     'x-cache': 'MISS',
+33 silly registry.get     'x-cache-hits': '0',
+33 silly registry.get     'x-timer': 'S1489765874.498998,VS0,VE437',
+33 silly registry.get     vary: 'Accept-Encoding' } ]
+34 silly lockFile c3e78a3e-childProcess childProcess@
+35 silly lockFile c3e78a3e-childProcess childProcess@
+36 error 404 Not Found
+36 error 404
+36 error 404 'childProcess' is not in the npm registry.
+36 error 404 You should bug the author to publish it
+36 error 404 It was specified as a dependency of 'nedb'
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, or http url, or git url.
+37 error System Linux 3.10.0-514.10.2.el7.x86_64
+38 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "childProcess"
+39 error cwd /home/ariel/Documents/Starflex/myTest
+40 error node -v v0.10.30
+41 error npm -v 1.4.21
+42 error code E404
+43 verbose exit [ 1, true ]

@@ -11,14 +11,27 @@ app.get('/listUsers', function (req, res) {
 });
 
 app.put("/reboot", function (req, res) {
-    var message = "---->>> :V  reboottinhh........ alles gut Freunde ";
+    var message = "---->>> :V  reboottinhh........ alles gut Freunde \n";
     console.log(message)
     res.send(200, message )
 });
 
 app.get("/info", function (req, res) {
-    var message = "Info:   Test server, with no content. O.o";
+    var message = "Info:   Test server, with no content. O.o\n";
     console.log(message)
+    res.send(200, { yourInfo : message } )
+});
+
+app.get("/fail", function (req, res) {
+    var message = "Failed with intent.\n";
+    console.log(message)
+    res.send(400, { yourInfo : message } )
+});
+
+app.get("/rfid/*", function (req, res) {
+    var message = "An rfid request.....  :)\n";
+    console.log({
+        yourInfo: message})
     res.send(200, message )
 });
 

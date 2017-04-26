@@ -1,6 +1,9 @@
-var Printer = require('./printer')
-var printer = Printer.getInstance();
+var Printer = require('./printer');
 
-console.log("APPS:  ");
+var printer = Printer.getInstance("app");
+var secondPrinterUser = require('./secondSingletonUser');
 
-printer.printNew()
+console.log("app: started my application");
+
+printer.printNew("app");
+secondPrinterUser.doYourStuff("app");

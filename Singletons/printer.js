@@ -1,46 +1,24 @@
 
-/*
- * Fake Constructor
- * @constructor
- */
+var instance = null;
 var Printer;
 Printer = function(){
-    throw SyntaxError('statusRestorer is an singleton : Use getInstance instead.');
+    //throw SyntaxError('statusRestorer is an singleton : Use getInstance instead.');
+    console.log("-->" + "PRIVATE" + "!!!!------>>   construction done:")
+    this.code = Math.random();
 };
 
 
-/**
- * PROGRAM LOADER:
- * Program restorer saves status and launches last running program
- * @constructor
- */
-var Instance = null;
-function Constructor(){
-    console.log("!!!!------>>   construction done:")
-    this.code = "1234";
-    Instance = this;
-}
+Printer.prototype.printNew = function(caller) {
+    console.log("-->" + caller + " ...:)  PRINTED");
+    console.log("-->" + caller + "With code private" + this.code);
+};
 
-
-/**
- * getInstance of the Printer object
- */
-Printer.prototype.getInstance = function () {
+module.exports.getInstance = function () {
     // constructor
-    console.log("New Instance:  " + Instance)
-    return Instance || new Constructor();
+    console.log("-->: New Instance:  " + instance)
+    if ( !instance ) {
+        instance = new Printer;
+    }
+    return instance;
 };
 
-
-/**
- * REPORT STATUS:
- * It builds an status report
- * @param type
- * @param callback
- */
-Printer.prototype.printNew = function() {
-    console.log(" ...:)  PRINTED");
-    console.log("With code private" + this.code);
-}
-
-module.exports = Printer;

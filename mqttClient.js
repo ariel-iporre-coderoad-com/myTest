@@ -19,7 +19,7 @@ var context = {
     sseTopic: null,
     uploads: {},
     restorer : null
-}
+};
 /**
  *
  * @param restorer
@@ -28,11 +28,11 @@ var context = {
 module.exports.setRestorer = function (restorer, cback) {
     context.restorer = restorer;
     cback();
-}
+};
 
 module.exports.setLogger = function (logger) {
     context.logger = logger;
-}
+};
 
 
 /**
@@ -41,7 +41,7 @@ module.exports.setLogger = function (logger) {
  */
 module.exports.launchMethod = function () {
     return function (readVal, type) {
-        context.logger.info("Auto-recovery: Mqtt status to lunch  " + JSON.stringify(readVal))
+        context.logger.info("Auto-recovery: Mqtt status to lunch  " + JSON.stringify(readVal));
         var  last = null;
         readVal.forEach(function (d) {
             last = d;
@@ -76,21 +76,21 @@ module.exports.reportStreaming = function () {
     }
 
     return streamingStatus;
-}
+};
 
 module.exports.isConnected = function () {
     if(context.client) {
         return context.client.connected;
     }
     return false;
-}
+};
 
 module.exports.destroySubscription = function (){
     childProcess.exec('/usr/bin/killall mqttClient', function (error, stdout, stderr) {
         module.exports.updateRecoverInFalse()
     })
 
-}
+};
 
 
 module.exports.updateRecoverInFalse = function () {
@@ -99,7 +99,7 @@ module.exports.updateRecoverInFalse = function () {
     context.restorer.update(false, "", "mqtt", {}, function (err, result) {
         context.logger.info("Auto-recovery: mqtt-client stop command. " + result);
     })
-}
+};
 
 module.exports.stop = function () {
     context.logSSE.info("Ending existing MQTT connection");
@@ -108,7 +108,7 @@ module.exports.stop = function () {
     if(context.client == null){
         module.exports.updateRecoverInFalse();
     }
-}
+};
 
 module.exports.stopIfActive = function () {
     if (module.exports.isConnected()) {
@@ -116,7 +116,7 @@ module.exports.stopIfActive = function () {
     }else {
         module.exports.updateRecoverInFalse();
     }
-}
+};
 
 module.exports.rfidEventsRequestHandler = function (mqttReq) {
     var urlList = mqttReq.cmd.split('/');
@@ -131,10 +131,10 @@ module.exports.rfidEventsRequestHandler = function (mqttReq) {
         },
         function (cb) {
             //Update restorer
-            context.logger.info("Auto-recovery: MQTT update mqtt status")
+            context.logger.info("Auto-recovery: MQTT update mqtt status");
             streamFlag = true;
             context.restorer.update(true, mqttReq.cmd, "mqtt", mqttReq, function (err, result) {
-                context.logger.info("Update mqtt status result: " + result)
+                context.logger.info("Update mqtt status result: " + result);
                 cb(null);
             })
         },
@@ -168,9 +168,9 @@ module.exports.rfidEventsRequestHandler = function (mqttReq) {
             });
 
             child.on('error', function (error) {
-                context.logger.warn("Problem instantiating mqttClient: " + error)
+                context.logger.warn("Problem instantiating mqttClient: " + error);
                 cb(error)
             });
         }
     ]);
-}
+};

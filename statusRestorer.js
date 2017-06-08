@@ -17,7 +17,7 @@ StatusRestorer = function () {
     this.db = new Datastore({filename: this.fileDB, autoload: true});
     this.updatesAllowed = true;
     this.recoveryEnabled = true;
-    logger.info(" Auto-recovery: Program Loader initialized")
+    logger.info(" Auto-recovery: Program Loader initialized");
     this.launchMethods = {};
 };
 
@@ -33,11 +33,11 @@ StatusRestorer.prototype.reportStatus = function (cb) {
     async.series([
         //compact database
         function (callback) {
-            logger.info("------------------------- compating.....")
+            logger.info("------------------------- compating.....");
             me.db.persistence.compactDatafile();
             //Waiting compact acction.
             setTimeout(function (){
-                logger.info("------------------------- done")
+                logger.info("------------------------- done");
                 callback();
             }, 500);
         },
@@ -57,7 +57,7 @@ StatusRestorer.prototype.reportStatus = function (cb) {
                 docs.forEach(function (d) {
                     lastConfig = d;
                     logger.info("Auto-recovery: Last recovery configuration registered: " + JSON.stringify(lastConfig))
-                })
+                });
                 callback(null, lastConfig);
             });
         },
@@ -87,8 +87,8 @@ StatusRestorer.prototype.reportStatus = function (cb) {
             program? response["programName"] = program.targetName : null;
             program? response["programRunning"] = program.active : null;
             mqtt? response["mqttSendingData"] = mqtt.active : null;
-            var mqttSub = ""
-            logger.info(mqtt)
+            var mqttSub = "";
+            logger.info(mqtt);
             if(mqtt){
                 mqtt.targetName.split("/")[2]? mqttSub = mqtt.targetName.split("/")[2]: null;
                 mqtt && mqtt.active? response["mqttSubscriptionName"] = mqttSub : null;
@@ -113,7 +113,7 @@ StatusRestorer.prototype.injectRecoverMethod = function(type, launchMethod, cb){
     var me = this;
     this.launchMethods[type] = launchMethod;
     cb(launchMethod.type);
-}
+};
 
 /**
  * RESTORE:
@@ -150,7 +150,7 @@ StatusRestorer.prototype.restore = function (type, cb) {
                             msg = "Program launched " + JSON.stringify(readVal);
                             callback(null, msg)
                         }else{
-                            msg = "Launch method not found"
+                            msg = "Launch method not found";
                             callback(null, msg)
                         }
                     });

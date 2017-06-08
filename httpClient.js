@@ -19,7 +19,7 @@ var callback = function(response){
       // Data received completely.
       console.log(body);
    });
-}
+};
 // Make a request to the server
 var req = http.request(options, callback);
 req.end();

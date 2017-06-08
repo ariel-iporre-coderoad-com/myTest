@@ -12,8 +12,8 @@ var calculateNewEPCLength = function(epc,tagReadData){
     var EPC_length = ui_len_in_words<<11;
     var calculated_PC  = EPC_length | preserved_bits;
     var final_PC = calculated_PC.toString(16);
-    console.log(JSON.stringify('final_PC',null,4))
-    console.log(JSON.stringify(final_PC,null,4))
+    console.log(JSON.stringify('final_PC',null,4));
+    console.log(JSON.stringify(final_PC,null,4));
     return final_PC;
 };
 

@@ -36,8 +36,7 @@ app.put('/config/jurisdiction/:value', function (req, res) {
                 logger.error("Trouble performing a reboot, err: " + err);
             }
         });
-    };
-
+    }
     function changeJurisdiction() {
         var changeJurisdictionCommand = "echo " + value;
         //"sed -i -e 's/\"jurisdiction\": \"[0-9]\"/\"jurisdiction\": \"" + value + "\"/g' /etc/jurisdiction";
@@ -56,8 +55,7 @@ app.put('/config/jurisdiction/:value', function (req, res) {
                 }
             }
         });
-    };
-
+    }
     function validate() {
         var error;
         if (!value || value.length !== 1 || isNaN(parseInt(value))) {
@@ -87,15 +85,15 @@ app.put('/config/jurisdiction/:value', function (req, res) {
 
 app.put("/reboot", function (req, res) {
     var message = "---->>> :V  reboottinhh........ alles gut Freunde ";
-    console.log(message)
+    console.log(message);
     res.send(200, message )
 });
 
 
 var server = app.listen(3000, function () {
 
-    var host = server.address().address
-    var port = server.address().port
+    var host = server.address().address;
+    var port = server.address().port;
 
     console.log("Example app listening at http://%s:%s", host, port)
 

@@ -768,7 +768,7 @@ process.argv = [];
 
 process.binding = function (name) {
     throw new Error('process.binding is not supported');
-}
+};
 
 // TODO(shtylman)
 process.cwd = function () { return '/' };
@@ -998,8 +998,7 @@ function byteArrayToBase64 (uint8) {
 
   function tripletToBase64 (num) {
     return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F];
-  };
-
+  }
   // go through the array every three bytes, we'll deal with trailing stuff later
   for (i = 0, length = uint8.length - extraBytes; i < length; i += 3) {
     temp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2]);
@@ -1339,7 +1338,7 @@ Datastore.prototype._insert = function (newDoc, cb) {
     ;
 
   try {
-    preparedDoc = this.prepareDocumentForInsertion(newDoc)
+    preparedDoc = this.prepareDocumentForInsertion(newDoc);
     this._insertInCache(preparedDoc);
   } catch (e) {
     return callback(e);
@@ -2486,9 +2485,7 @@ function modify (obj, updateQuery) {
 
   if (obj._id !== newDoc._id) { throw new Error("You can't change a document's _id"); }
   return newDoc;
-};
-
-
+}
 // ==============================================================
 // Finding documents
 // ==============================================================
@@ -2516,7 +2513,7 @@ function getDotValue (obj, field) {
     }
 
     // Return the array of values
-    objs = new Array();
+    objs = [];
     for (i = 0; i < obj[fieldParts[0]].length; i += 1) {
        objs.push(getDotValue(obj[fieldParts[0]][i], fieldParts.slice(1)));
     }
@@ -2751,10 +2748,8 @@ function match (obj, query) {
   }
 
   return true;
-};
-
-
-/**
+}
+  /**
  * Match an object against a specific { key: value } part of a query
  * if the treatObjAsValue flag is set, don't try to match every part separately, but the array as a whole
  */
@@ -2888,10 +2883,8 @@ function Persistence (options) {
     console.log("==================================================================");
     this.filename = Persistence.getNWAppFilename(options.nodeWebkitAppName, this.filename);
   }
-};
-
-
-/**
+}
+  /**
  * Check if a directory exists and create it on the fly if it is not the case
  * cb is optional, signature: err
  */
@@ -2935,7 +2928,7 @@ Persistence.getNWAppFilename = function (appName, relativeFilename) {
   }
 
   return path.join(home, 'nedb-data', relativeFilename);
-}
+};
 
 
 /**
@@ -3145,7 +3138,7 @@ module.exports = Persistence;
  * This version is the browser version
  */
 
-var localforage = require('localforage')
+var localforage = require('localforage');
 
 // Configure localforage to display NeDB name for now. Would be a good idea to let user use his own app name
 localforage.config({
@@ -5214,8 +5207,8 @@ function getRandomArray (n) {
   res.splice(next, 0, n - 1);   // Add n-1 at a random position in the array
 
   return res;
-};
-module.exports.getRandomArray = getRandomArray;
+}
+  module.exports.getRandomArray = getRandomArray;
 
 
 /*
@@ -5295,7 +5288,7 @@ var define, requireModule, require, requirejs;
         var part = parts[i];
 
         if (part === '..') { parentBase.pop(); }
-        else if (part === '.') { continue; }
+        else if (part === '.') {  }
         else { parentBase.push(part); }
       }
 
@@ -5594,7 +5587,7 @@ define("promise/promise",
       }
 
       if (handleThenable(promise, value)) {
-        return;
+
       } else if (hasCallback && succeeded) {
         resolve(promise, value);
       } else if (failed) {
@@ -8023,7 +8016,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ }
 /******/ ])
 });
-;
 },{"__browserify_process":4}],19:[function(require,module,exports){
 //     Underscore.js 1.4.4
 //     http://underscorejs.org
@@ -9254,4 +9246,3 @@ return /******/ (function(modules) { // webpackBootstrap
 
 },{}]},{},[7])(7)
 });
-;

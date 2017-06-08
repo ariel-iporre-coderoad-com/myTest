@@ -19,7 +19,7 @@ var mySingleton = (function () {
                 return privateRandomNumber;
             }
         };
-    };
+    }
     return {
         // Get the Singleton instance if one exists
         // or create one if it doesn't

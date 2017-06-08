@@ -26,7 +26,7 @@ var sampleString = "U-Boot 2010.12-svn57819 (Mar 22 2017 - 17:42:50)";
 //var sampleString = "A question begin about [managing code end( reposbeginitory ]stend(ructure";
 var regEx =  new RegExp('svn.*?\\d+', 'g');
 var result = sampleString.match(regEx);
-var str = result[0]
+var str = result[0];
 var version = str.substring(3, str.length);
 console.log("------> version " + version);
 

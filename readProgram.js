@@ -4,7 +4,7 @@
 var fs = require('fs');
 
 var activeRFIDProgram = {};
-var target = './program.json'
+var target = './program.json';
 fs.readFile(target, function(err,data) {
     activeRFIDProgram = JSON.parse(data);
     console.log(activeRFIDProgram);

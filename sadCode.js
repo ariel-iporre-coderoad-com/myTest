@@ -184,7 +184,7 @@ function RecoveryOptionsCtrl($scope,ngDialog,MicroStar,TagViewerSession,$rootSco
   }
 
   function setCurrentRunningProgramLast(){
-    setLastRunningProgramValues()
+    setLastRunningProgramValues();
     if(TagViewerSession.isRunning()) {
       var prog = TagViewerSession.getActiveProgram();
       rcv.recovery.programName = prog;

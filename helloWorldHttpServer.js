@@ -2,7 +2,7 @@
 var http = require('http');
 // creates server
 http.createServer(function (req, res) {
-	console.log("" + req)
+	console.log("" + req);
 	res.writeHead(200, {'Content-Type': 'text/plain'});
 	res.end('Hello World\n');
 }).listen(3000);

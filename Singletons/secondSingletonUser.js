@@ -6,4 +6,4 @@ var p = Printer.getInstance();
 
 module.exports.doYourStuff = function () {
     p.printNew("secondUser");
-}
+};

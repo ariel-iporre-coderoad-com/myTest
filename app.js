@@ -2,8 +2,8 @@ var ProgramLoader = require('./statusRestorer');
 var restorer = new ProgramLoader();
 var logger = require('winston');
 var async = require('async');
-var programLauncher = require('./programLauncher')
-var mqttClient = require('./mqttClient')
+var programLauncher = require('./programLauncher');
+var mqttClient = require('./mqttClient');
 
 
 
@@ -12,35 +12,35 @@ var mqttClient = require('./mqttClient')
 async.series([
     function (cb) {
         restorer.reportStatus(function (response) {
-            logger.info("Response: " +  response)
+            logger.info("Response: " +  response);
             cb(null);
         })
     },
     function (cb) {
         restorer.update(true, "/test/abc01", "mqtt", "recovery data", function (err, result) {
-            logger.info("Update mqtt status result: " + result)
+            logger.info("Update mqtt status result: " + result);
             cb(null);
         })
     },
     function (cb) {
         restorer.update(true, "/test/abc02", "mqtt", "recovery data", function (err, result) {
-            logger.info("Update mqtt status result: " + result)
+            logger.info("Update mqtt status result: " + result);
             cb(null);
         })
     },
     function (cb) {
         restorer.update(true, "/test/abc03", "mqtt", "recovery data", function (err, result) {
-            logger.info("Update mqtt status result: " + result)
+            logger.info("Update mqtt status result: " + result);
             cb(null);
         })
     },
     function (cb) {
         restorer.reportStatus(function (response) {
-            logger.info("Response: " +  response)
+            logger.info("Response: " +  response);
             cb(null)
         })
     }
-])
+]);
 
 
 

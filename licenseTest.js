@@ -1,6 +1,6 @@
-var licMgr = require('../license')
-var logger = require('winston')
-var async = require('async')
+var licMgr = require('../license');
+var logger = require('winston');
+var async = require('async');
 
 licMgr.licensePrep("001F48C5924A", function () {
     logger.info('TEST: license done!!');
@@ -27,7 +27,7 @@ var run = function () {
     async.series([
         function (cb) {
             licTest.preparation(function (msg) {
-                logger.info("All good: " + msg)
+                logger.info("All good: " + msg);
                 setTimeout(function () {
                     cb(null);
                 }, 100);

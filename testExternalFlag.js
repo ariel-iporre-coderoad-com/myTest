@@ -26,7 +26,7 @@ var start = function () {
         function (cb) {
             API.connectMqtt(MQTTHandler.config.host, MQTTHandler.config.port)
                 .then(function () {
-                    logger.info("2.0")
+                    logger.info("2.0");
                     cb(null);
                 });
         },
@@ -52,14 +52,14 @@ var start = function () {
         },
         function (cb) {
             API.takeControl({mqtt_data_publisher: "external"}, function () {
-                logger.info("--->> takes control !!!")
+                logger.info("--->> takes control !!!");
                 cb(null);
             })
         },
         function (cb) {
             var sse = starListenReadings(API.ip, config.subscriptionName);
             API.takeControl({mqtt_data_active: true}, function () {
-                logger.info(" -----> flag is on and streaming is on")
+                logger.info(" -----> flag is on and streaming is on");
                 setTimeout(function () {
                     throw new Error();
                     // sse.close();
@@ -70,7 +70,7 @@ var start = function () {
         },
         function (cb) {
             API.takeControl({mqtt_data_active: false}, function () {
-                logger.info(" ---->> flag is false")
+                logger.info(" ---->> flag is false");
                 setTimeout(function () {
                     cb(null);
                 }, 10000);
@@ -79,7 +79,7 @@ var start = function () {
         function (cb) {
             var sse = starListenReadings(API.ip, config.subscriptionName);
             API.takeControl({mqtt_data_active: true}, function () {
-                logger.info("---->> flag is on again")
+                logger.info("---->> flag is on again");
                 setTimeout(function () {
                     sse.close();
                     logger.info(" ---->> close streaming");
@@ -161,7 +161,7 @@ var log = function (type, msg) {
     if (type === 'error') {
         logger.error(msg);
     }
-    return;
+
 };
 //
 //

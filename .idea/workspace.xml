@@ -2,11 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2773d88a-de9a-4f39-9151-cf7e4be9d008" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Singletons/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Singletons/secondSingletonUser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/car.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promiseArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promiseAsync.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/promises1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/thisfromexport.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deamons/over" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/deamons/over.c" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Singletons/app.js" afterPath="$PROJECT_DIR$/Singletons/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Singletons/example.js" afterPath="$PROJECT_DIR$/Singletons/example.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Singletons/printer.js" afterPath="$PROJECT_DIR$/Singletons/printer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Singletons/secondSingletonUser.js" afterPath="$PROJECT_DIR$/Singletons/secondSingletonUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/nedb/browser-version/out/nedb.js" afterPath="$PROJECT_DIR$/bower_components/nedb/browser-version/out/nedb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compare_strings.js" afterPath="$PROJECT_DIR$/compare_strings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events.js" afterPath="$PROJECT_DIR$/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fsNecbComp.js" afterPath="$PROJECT_DIR$/fsNecbComp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloWorldHttpServer.js" afterPath="$PROJECT_DIR$/helloWorldHttpServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/httpClient.js" afterPath="$PROJECT_DIR$/httpClient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/licenseTest.js" afterPath="$PROJECT_DIR$/licenseTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mqttClient.js" afterPath="$PROJECT_DIR$/mqttClient.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newEPC.js" afterPath="$PROJECT_DIR$/newEPC.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/nedb/node_modules/localforage/examples/index.html" afterPath="$PROJECT_DIR$/node_modules/nedb/node_modules/localforage/examples/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/har-validator/node_modules/ajv/lib/ajv.d.ts" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/har-validator/node_modules/ajv/lib/ajv.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/extsprintf/jsl.node.conf" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/extsprintf/jsl.node.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/verror/jsl.node.conf" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/http-signature/node_modules/jsprim/node_modules/verror/jsl.node.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/tweetnacl/nacl.d.ts" afterPath="$PROJECT_DIR$/node_modules/request/node_modules/http-signature/node_modules/sshpk/node_modules/tweetnacl/nacl.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/programLauncher.js" afterPath="$PROJECT_DIR$/programLauncher.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readJson.js" afterPath="$PROJECT_DIR$/readJson.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readJsonResource.js" afterPath="$PROJECT_DIR$/readJsonResource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readProgram.js" afterPath="$PROJECT_DIR$/readProgram.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regexExtraction.js" afterPath="$PROJECT_DIR$/regexExtraction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sadCode.js" afterPath="$PROJECT_DIR$/sadCode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server1.js" afterPath="$PROJECT_DIR$/server1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/statusRestorer.js" afterPath="$PROJECT_DIR$/statusRestorer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storePCLength.js" afterPath="$PROJECT_DIR$/storePCLength.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/streamingData.js" afterPath="$PROJECT_DIR$/streamingData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testExternalFlag.js" afterPath="$PROJECT_DIR$/testExternalFlag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testJurisdictionEndPoint.js" afterPath="$PROJECT_DIR$/testJurisdictionEndPoint.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,52 +64,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.js">
+      <file leaf-file-name="filters.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filters.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Singletons/app.js">
+      <file leaf-file-name="promiseAsync.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/promiseAsync.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5">
+              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondSingletonUser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Singletons/secondSingletonUser.js">
+      <file leaf-file-name="promiseArray.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/promiseArray.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-              <folding />
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="printer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Singletons/printer.js">
+      <file leaf-file-name="promises1.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/promises1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3254973">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-              <folding />
+            <state vertical-scroll-proportion="1.0">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Singletons/example.js">
+      <file leaf-file-name="car.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/car.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#38#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="thisfromexport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thisfromexport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#38#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,6 +222,14 @@
         <option value="$PROJECT_DIR$/Singletons/app.js" />
         <option value="$PROJECT_DIR$/Singletons/secondSingletonUser.js" />
         <option value="$PROJECT_DIR$/Singletons/printer.js" />
+        <option value="$PROJECT_DIR$/a.js" />
+        <option value="$PROJECT_DIR$/promiseAsync.js" />
+        <option value="$PROJECT_DIR$/promise array.js" />
+        <option value="$PROJECT_DIR$/promiseArray.js" />
+        <option value="$PROJECT_DIR$/prototypePublicField.js" />
+        <option value="$PROJECT_DIR$/car.js" />
+        <option value="$PROJECT_DIR$/thisfromexport.js" />
+        <option value="$PROJECT_DIR$/promises1.js" />
       </list>
     </option>
   </component>
@@ -176,6 +237,13 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -211,7 +279,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -231,54 +299,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Singletons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../functionalPactice" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
-    <configuration default="false" name="regexExtraction.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="regexExtraction.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.promises1.js">
+    <configuration default="false" name="promiseAsync.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="promiseAsync.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="promiseArray.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="promiseArray.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="testExternalFlag.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="testExternalFlag.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="prototypePublicField.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="$PROJECT_DIR$/car.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="testJurisdictionEndPoint.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="testJurisdictionEndPoint.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="thisfromexport.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="thisfromexport.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/Singletons">
+    <configuration default="false" name="promises1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/local/bin/node" path-to-js-file="promises1.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -754,15 +809,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.regexExtraction.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.server.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.testExternalFlag.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.testJurisdictionEndPoint.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.promiseAsync.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.promiseArray.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.prototypePublicField.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.thisfromexport.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.promises1.js" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.promises1.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.thisfromexport.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.prototypePublicField.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.promiseArray.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.promiseAsync.js" />
       </list>
     </recent_temporary>
   </component>
@@ -772,6 +831,9 @@
     </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2773d88a-de9a-4f39-9151-cf7e4be9d008" name="Default" comment="" />
@@ -799,12 +861,27 @@
       <workItem from="1491567093781" duration="1773000" />
       <workItem from="1493047487737" duration="9742000" />
       <workItem from="1493154269111" duration="68000" />
-      <workItem from="1493154354870" duration="5720000" />
+      <workItem from="1493154354870" duration="8066000" />
+      <workItem from="1493237379940" duration="619000" />
+      <workItem from="1493294763968" duration="9244000" />
+      <workItem from="1493814941765" duration="3836000" />
+      <workItem from="1494245383692" duration="1457000" />
+      <workItem from="1494357388013" duration="2988000" />
+      <workItem from="1494596933994" duration="1259000" />
+      <workItem from="1495120200815" duration="273000" />
+      <workItem from="1495736447802" duration="29382000" />
     </task>
+    <task id="LOCAL-00001" summary="Sigleton approach double">
+      <created>1493211337581</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493211337581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263515000" />
+    <option name="totallyTimeSpent" value="314919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,11 +902,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34350282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33993015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32750583" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18104367" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31363153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32768363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -838,12 +915,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976275" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -878,6 +955,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sigleton approach double" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sigleton approach double" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -892,49 +973,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/npm-debug.log" />
-    <entry file="file://$PROJECT_DIR$/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1018" column="0" selection-start-line="1018" selection-start-column="0" selection-end-line="1018" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/nedb/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readJsonResource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starProgramEvents.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="7" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newEPC.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1068,14 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fsNecbComp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mqtt/lib/connect/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1167,13 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="219" column="23" selection-start-line="219" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/regexExtraction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1199,7 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1207,7 +1229,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.065099455">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.065099455">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1239,15 +1257,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Singletons/printer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3254973">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fsNecbComp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloWorldHttpServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06490385">
+          <caret line="5" column="0" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promiseAsync.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thisfromexport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promiseArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/promises1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

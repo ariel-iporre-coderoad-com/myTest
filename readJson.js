@@ -1,5 +1,5 @@
 var fs = require('fs');
-var target = '/home/ariel/Documents/Starflex/scripts/simple_program1.json'
+var target = '/home/ariel/Documents/Starflex/scripts/simple_program1.json';
 var parse = function (cb) {
                 fs.readFile(target, function (fsErr, data) {
                     if (fsErr) {
@@ -17,7 +17,7 @@ var parse = function (cb) {
 			}
                     }
                 });
-            }
-setInterval(function(){console.log('still running')},2000)
+            };
+setInterval(function(){console.log('still running')},2000);
 
-parse()
+parse();

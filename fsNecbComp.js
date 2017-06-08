@@ -47,7 +47,7 @@ function b () {
         function (cb) {
             db.persistence.compactDatafile();
             setTimeout(function (){
-                logger.info("------------------------- done")
+                logger.info("------------------------- done");
                 cb(null);
             }, 500);
 

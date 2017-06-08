@@ -19,13 +19,13 @@ module.exports.launchProgram = function (readVal, type) {
     } else {
         logger.warn("Auto-recovery: None program has been registered running or stoped in the database.")
     }
-}
+};
 
 function run(targetName) {
     var options = {
         method: "put",
         url: 'http://127.0.0.1:3000/rfid/activeProgram/' + targetName
-    }
+    };
     request(options, function (err, resp, body) {
         if (err) {
             logger.error("Auto-recovery: Trouble issuing macstart, err: " + err);
